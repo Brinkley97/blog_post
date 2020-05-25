@@ -14,7 +14,7 @@ import os
 
 
 # comment out to run with local host
-# import django_heroku
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,9 +27,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q+_0=-i&(d(sm*=mq*k^j=)1dbh@zd^!+@8es6*7o@78mx@lit'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["www.sheltered-island-56300.herokuapp.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["djangoblogpost.herokuapp.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -128,4 +129,4 @@ STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
 # comment out to run with local host
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
