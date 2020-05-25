@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Meal Blog Site Coming Soon</title>
+
+    <!-- MAIN CSS -->
+    <link href="{% static 'master.css' %}" rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="{{ STATIC_URL }} https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <!-- <link href="{{ STATIC_URL }} fontawesome.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }} brands.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }} solid.css" rel="stylesheet"> -->
+
+    <!-- ANIMATE -->
+    <link href="{{ STATIC_URL }} https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <section class="border">
+      <div class="container-fluid">
+        <div class="col-lg-12 col-sm-12">
+          <h2 class="comingSoonText animate__animated animate__backInDown animate__delay-3s">Coming Soon!</h2>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <div class="col-lg-12 col-sm-12">
+          <h2 class="introFont">College Students Quick Meal Stop</h2>
+        </div>
+        <hr>
+        <div class="col-lg-12">
+          <h2 class="aboutFont">Find recipes made by your peers at various universities</h2>
+        </div>
+      </div>
+      <a class="btn btn-primary js-scroll-trigger" href="{% url 'accounts:signup' %}">Signup</a>
+
+      <img class="comingSoonImg" src="{% static 'foodItems.jpeg' %}" alt="">
+
+    </section>
+
+    <script rel="stylesheet" href="{% static 'master.js' %}"></script>
+
+  </body>
+</html>
