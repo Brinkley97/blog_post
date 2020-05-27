@@ -29,7 +29,7 @@ SECRET_KEY = 'q+_0=-i&(d(sm*=mq*k^j=)1dbh@zd^!+@8es6*7o@78mx@lit'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["www.sheltered-island-56300.herokuapp.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["djangoblogpost.herokuapp.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
 ]
 
 MIDDLEWARE = [

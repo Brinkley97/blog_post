@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # fix this to deploy with heroku
     url(r'^$', views.homepage),
+    url(r'^accounts/', include('accounts.urls')),
 
 ]
 
