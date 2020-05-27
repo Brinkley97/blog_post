@@ -36,6 +36,6 @@ pytz==2017.2
 six==1.11.0
 sqlparse==0.3.0
 virtualenv==16.7.5
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 whitenoise==3.3.0
 wrapt==1.10.11
