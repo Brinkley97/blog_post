@@ -7,7 +7,7 @@ cozmo==1.4.10
 cozmoclad==3.4.0
 cryptography==2.8
 dj-database-url==0.4.2
-Django==1.11.1
+Django==1.11.28
 django-heroku==0.3.1
 Flask==1.0.2
 GDAL==2.4.1
