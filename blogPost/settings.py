@@ -82,6 +82,8 @@ WSGI_APPLICATION = 'blogPost.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+DATABASES['default'] = dj_database_url.config()
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -90,7 +92,6 @@ DATABASES = {
 }
 DATABASE_URL = os.environ['DATABASE_URL']
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-# DATABASES['default'] = dj_database_url.config()
 
 
 
