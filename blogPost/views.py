@@ -1,4 +1,6 @@
 from django.shortcuts import render
+import requests
+
 
 #homepage
 def homepage(request):
